@@ -1,0 +1,29 @@
+{
+  "name": "fa-utils",
+  "version": "0.1.0",
+  "description": "Useful Persian utilities.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmadMaleki/fa-utils.git"
+  },
+  "keywords": [
+    "persian",
+    "farsi",
+    "english",
+    "arabic",
+    "number",
+    "utils",
+    "utilities"
+  ],
+  "author": {
+    "name": "Ahmad Maleki",
+    "email": "ahmad_maleki93@yahoo.com",
+    "url": "https://www.ahmadmaleki.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmadMaleki/fa-utils/issues"
+  },
+  "homepage": "https://github.com/AhmadMaleki/fa-utils#readme"
+}
