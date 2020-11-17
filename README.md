@@ -68,6 +68,8 @@ var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
 
 ## Release History
 
+* 0.1.1
+    * Add Readme
 * 0.1.0
     * Initial Release
 
