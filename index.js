@@ -8,10 +8,9 @@ const {
 } = require("./constants/constants");
 
 const toEnDigit = (value) => {
-  let result = value;
+  let result = value.toString();
   for (let i = 0; i < 10; i += 1) {
     result = result
-      .toString()
       .replace(persianNumbersFinder[i], englishNumbers[i])
       .replace(arabicNumbersFinder[i], englishNumbers[i]);
   }
@@ -19,10 +18,9 @@ const toEnDigit = (value) => {
 };
 
 const toFaDigit = (value) => {
-  let result = value;
+  let result = value.toString();
   for (let i = 0; i < 10; i += 1) {
     result = result
-      .toString()
       .replace(englishNumbersFinder[i], persianNumbers[i])
       .replace(arabicNumbersFinder[i], persianNumbers[i]);
   }
@@ -30,10 +28,9 @@ const toFaDigit = (value) => {
 };
 
 const toArDigit = (value) => {
-  let result = value;
+  let result = value.toString();
   for (let i = 0; i < 10; i += 1) {
     result = result
-      .toString()
       .replace(englishNumbersFinder[i], arabicNumbers[i])
       .replace(persianNumbersFinder[i], arabicNumbers[i]);
   }
