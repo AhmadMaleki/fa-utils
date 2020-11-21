@@ -7,6 +7,11 @@ const {
   arabicNumbersFinder,
 } = require("./constants/constants");
 
+/**
+ * Converts Persian/Arabic digits to English
+ * @param {String|Number} value 
+ * @returns {String}
+ */
 const toEnDigit = (value) => {
   let result = value.toString();
   for (let i = 0; i < 10; i += 1) {
@@ -17,6 +22,11 @@ const toEnDigit = (value) => {
   return result;
 };
 
+/**
+ * Converts English/Arabic digits to Persian
+ * @param {String|Number} value 
+ * @returns {String}
+ */
 const toFaDigit = (value) => {
   let result = value.toString();
   for (let i = 0; i < 10; i += 1) {
@@ -27,6 +37,11 @@ const toFaDigit = (value) => {
   return result;
 };
 
+/**
+ * Converts English/Persian digits to Arabic
+ * @param {String|Number} value 
+ * @returns {String}
+ */
 const toArDigit = (value) => {
   let result = value.toString();
   for (let i = 0; i < 10; i += 1) {
