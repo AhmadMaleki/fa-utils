@@ -70,6 +70,8 @@ var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
 
 ## Release History
 
+* 0.1.3
+    * Add TypeScript type declaration (Thanks to [@geopic](https://github.com/geopic))
 * 0.1.2
     * Add autocomplete for methods
 * 0.1.1
@@ -93,11 +95,6 @@ All contributions are welcome and I appreciate them. Including adding new functi
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/fa-utils.svg
-[npm-url]: https://npmjs.org/package/fa-utils
-[npm-downloads]: https://img.shields.io/npm/dm/fa-utils.svg
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -117,3 +114,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/fa-utils.svg
+[npm-url]: https://npmjs.org/package/fa-utils
+[npm-downloads]: https://img.shields.io/npm/dm/fa-utils.svg
