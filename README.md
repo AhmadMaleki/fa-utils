@@ -34,7 +34,7 @@ var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
 ## Examples
 > _All functions can take **String** or **Number** as argument and return a **String**._
 
-* ### toEnDigit()
+* **toEnDigit()**
  
     Convert Persian/Arabic numbers to English:
 
@@ -45,7 +45,7 @@ var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
     toEnDigit("۱۲۳.۴۵")        // returns: "123.45"
     ```
 
-* ### toFaDigit()
+* **toFaDigit()**
  
     Convert English/Arabic numbers to Persian:
 
@@ -56,7 +56,7 @@ var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
     toFaDigit("123.45")        // returns: "۱۲۳.۴۵"
     ```
 
-* ### toArDigit()
+* **toArDigit()**
  
     Convert English/Persian numbers to Arabic:
 
