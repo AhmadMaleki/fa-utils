@@ -70,6 +70,8 @@ var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
 
 ## Release History
 
+* 0.1.4
+    * Enhance package.json
 * 0.1.3
     * Add TypeScript type declaration (Thanks to [@geopic](https://github.com/geopic))
 * 0.1.2
