@@ -26,6 +26,7 @@
     "url": "https://github.com/AhmadMaleki/fa-utils/issues"
   },
   "homepage": "https://github.com/AhmadMaleki/fa-utils#readme",
+  "types": "index.d.ts",
   "devDependencies": {
     "all-contributors-cli": "^6.19.0"
   }
