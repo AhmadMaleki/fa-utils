@@ -41,6 +41,8 @@ const arabicNumbersFinder = [
   /٩/g,
 ];
 
+const numberSymbols = ["", "K", "M", "B", "T"];
+
 module.exports = {
   englishNumbers,
   persianNumbers,
@@ -48,4 +50,5 @@ module.exports = {
   englishNumbersFinder,
   persianNumbersFinder,
   arabicNumbersFinder,
+  numberSymbols,
 };

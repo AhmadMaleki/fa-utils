@@ -5,11 +5,12 @@ const {
   englishNumbersFinder,
   persianNumbersFinder,
   arabicNumbersFinder,
+  numberSymbols,
 } = require("./constants/constants");
 
 /**
  * Converts Persian/Arabic digits to English
- * @param {String|Number} value 
+ * @param {String|Number} value
  * @returns {String}
  */
 const toEnDigit = (value) => {
@@ -24,7 +25,7 @@ const toEnDigit = (value) => {
 
 /**
  * Converts English/Arabic digits to Persian
- * @param {String|Number} value 
+ * @param {String|Number} value
  * @returns {String}
  */
 const toFaDigit = (value) => {
@@ -39,7 +40,7 @@ const toFaDigit = (value) => {
 
 /**
  * Converts English/Persian digits to Arabic
- * @param {String|Number} value 
+ * @param {String|Number} value
  * @returns {String}
  */
 const toArDigit = (value) => {
@@ -52,8 +53,25 @@ const toArDigit = (value) => {
   return result;
 };
 
+/**
+ * Shortens numbers by adding symbols
+ * @param {Number} value
+ * @returns {String}
+ */
+const toAbbrNumber = (value) => {
+  const tier = (Math.log10(Math.abs(value)) / 3) | 0;
+  if (tier == 0) {
+    return value;
+  }
+  const symbol = numberSymbols[tier];
+  const mask = Math.pow(10, tier * 3);
+  const scaled = value / mask;
+  return scaled.toFixed(1) + symbol;
+};
+
 module.exports = {
   toEnDigit,
   toFaDigit,
   toArDigit,
+  toAbbrNumber,
 };

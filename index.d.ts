@@ -16,4 +16,10 @@ declare module 'fa-utils' {
    * @param value
    */
   export function toArDigit(value: string | number): string;
+
+  /**
+   * Shortens numbers by adding symbols
+   * @param value
+   */
+   export function toAbbrNumber(value: number): string;
 }
