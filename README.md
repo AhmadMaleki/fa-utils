@@ -21,18 +21,18 @@ npm install fa-utils
 ### _ES6:_
 
 ```javascript
-import { toEnDigit, toFaDigit, toArDigit } from 'fa-utils'
+import { toEnDigit, toFaDigit, toArDigit, toAbbrNumber } from 'fa-utils'
 ```
 
 ### _ES5 / CommonJS:_
 
 ```javascript
-var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
+var { toEnDigit, toFaDigit, toArDigit, toAbbrNumber } = require('fa-utils')
 ```
 
 
 ## Examples
-> _All functions can take **String** or **Number** as argument and return a **String**._
+> _The **Input** and **Output** of each function is shown in examples blow._
 
 * **toEnDigit()**
  
@@ -67,6 +67,16 @@ var { toEnDigit, toFaDigit, toArDigit } = require('fa-utils')
     toArDigit("123.45")        // returns: "١٢٣.٤٥"
     ```
 
+* **toAbbrNumber()**
+ 
+    Shortens numbers by adding symbols:
+
+    ```javascript
+    toAbbrNumber(710)      // returns: "710"
+    toAbbrNumber(4861)    // returns: "4.9K"
+    toAbbrNumber(14211793.45)    // returns: "14.2M"
+    toAbbrNumber(-356199)        // returns: "-356.2K"
+    ```
 
 ## Release History
 
