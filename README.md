@@ -80,10 +80,11 @@ var { toEnDigit, toFaDigit, toArDigit, toAbbrNumber } = require('fa-utils')
 
 ## Release History
 
+<<<<<<< HEAD
 * 0.1.5
     * Add toAbbrNumber method
 * 0.1.4
-    * Bug fix
+    * Enhance package.json
 * 0.1.3
     * Add TypeScript type declaration (Thanks to [@geopic](https://github.com/geopic))
 * 0.1.2
